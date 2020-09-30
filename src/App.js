@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import JumbotronContainer from "./containers/jumbotron";
+import FooterContainer from "./containers/footer";
+import FaqsContainer from "./containers/faqs";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <JumbotronContainer />
+      <FaqsContainer />
+      <FooterContainer />
+    </>
   );
 }
 
 export default App;
+
+// 2h20p00s
