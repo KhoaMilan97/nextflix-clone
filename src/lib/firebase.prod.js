@@ -2,6 +2,8 @@ import Firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
+//import { seedDatabase } from "../seed";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCiXuiy4BhfMRaypXi9zFza3j_9fvglZUE",
   authDomain: "twitter-clone-97045.firebaseapp.com",
@@ -13,6 +15,8 @@ const firebaseConfig = {
   measurementId: "G-DF6776MGDZ",
 };
 
-Firebase.initializeApp(firebaseConfig);
+const firebase = Firebase.initializeApp(firebaseConfig);
+
+//seedDatabase(firebase);
 
 export { firebase };
