@@ -40,7 +40,7 @@ Player.Button = function PlayerButton({ ...restProps }) {
       onClick={() => setShowPlayer((showPlayer) => !showPlayer)}
       {...restProps}
     >
-      Play
+        Play
     </Button>
   );
 };
